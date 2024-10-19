@@ -4,12 +4,7 @@ import { Link } from 'react-router-dom';
 import { FaInstagram } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
-
-
-
-
-
-
+import logo from '../../src/pages/Photos/LOGO-removebg.png'
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false); // State for mobile dropdown
@@ -34,7 +29,7 @@ const Navbar = () => {
           <div className="flex items-center">
             <a href="/" className="text-lg">
               <img
-                src="./LOGO-removebg.png"
+                src={logo}
                 alt="Logo" id='nav-loo'
               />
             </a>
