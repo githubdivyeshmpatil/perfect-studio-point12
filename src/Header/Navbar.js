@@ -30,7 +30,7 @@ const Navbar = () => {
             <a href="/" className="text-lg">
               <img
                 src={logo}
-                alt="Logo" id='nav-loo'
+                alt="Log" id='nav-loo'
               />
             </a>
           </div>
