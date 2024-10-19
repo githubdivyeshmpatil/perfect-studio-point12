@@ -1,0 +1,117 @@
+/* Base Styles for Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color:#edf3f8;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 20px;
+}
+
+.footer h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #015c99;
+  font-weight: bold;
+  font-family: "Baskervville SC", serif;
+}
+
+.footer p,
+.footer a {
+  font-size: 17px;
+  color:  #525252;
+  margin: 5px 0;
+  text-decoration: none;
+  display: block;
+  font-weight: 400;
+}
+
+/* Styling for Email Icon */
+.footer .contact-details p {
+  display: flex;
+  align-items: center;
+}
+
+.footer .contact-details p svg {
+  margin-right: 8px; /* Adjust spacing between icon and text */
+}
+
+/* Specific styling for the 'INFORMATION' column */
+.footer-information {
+  display: block;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.footer .contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Styling for Instagram Photos */
+.footer .instagram-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+  gap: 5px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer-column {
+    margin: 10px 0;
+  }
+  .footer .instagram-photos {
+    grid-template-columns: repeat(6, 1fr); /* 2 columns for screens up to 768px */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer .instagram-photos {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns in 1 row for 320px width */  }
+}
+
+/* Responsive Styles for 320px Screen Width */
+@media screen and (max-width: 320px) {
+  .footer .instagram-photos {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns in 1 row for 320px width */
+    gap: 10px; /* Increase gap between images for better spacing */
+  }
+}
+
+
+.footer-copy {
+  background-color:whitesmoke; /* Dark background color */
+  color: black; /* White text color */
+  text-align: center; /* Center align text */
+  padding: 7px; /* Space around text */
+  font-size: 14px; /* Font size */
+}
+
+.footer p {
+  margin: 0; /* Remove default margin */
+}

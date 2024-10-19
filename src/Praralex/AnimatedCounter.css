@@ -1,0 +1,70 @@
+/* Default styles for larger screens */
+.counter-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.counter-box {
+  width: 23%;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.counter {
+  font-size: 4rem;
+  color: #86a0b6;
+  margin-bottom: 10px;
+  font-family: "Baskervville SC", serif;
+  border-bottom: 2px solid #002642; /* Line below the counter */
+  padding-bottom: 10px; /* Space between text and line */
+}
+
+#nu {
+  color: #002642;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Baskervville SC", serif;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .counter-box {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .counter-box {
+    width: 90%;
+  }
+}
+
+/* Specific media query for 320px to 767px */
+@media (min-width: 320px) and (max-width: 767px) {
+  .counter-container {
+    justify-content: center; /* Center the items */
+  }
+  .counter-box {
+    width: 48%; /* Adjust width for 2 items per row */
+  }
+  #nu{
+    font-size: 15px;
+  }
+}
+
+/* Media query for 768px and above */
+@media (min-width: 768px) {
+  .counter-box {
+    width: 23%; /* Adjust width for 4 items per row */
+  }
+  #nu{
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,30 @@
+/* Base styling for the image container */
+.img-co {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 20px; /* Add padding if needed */
+  }
+  
+  /* Styling for the image */
+  .img-co img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Media query for screens up to 768px */
+  @media (max-width: 768px) {
+    .img-co {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  /* Media query for screens larger than 768px */
+  @media (min-width: 769px) {
+    .img-co {
+      padding: 20px; /* Adjust padding for larger screens */
+    }
+  }
+  

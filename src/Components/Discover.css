@@ -1,0 +1,56 @@
+.discover-row{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 500;
+    font-family: "Nunito Sans", sans-serif;
+  
+ }
+ #discover-text{
+     font-size: 32px;
+     font-weight: 600;
+     font-family: "Baskervville SC", serif;
+     color: #0078c8;
+ }
+ #your-text{
+     font-size: 18px;
+    
+ }
+ #Explore-text{
+     font-size: 15px;
+ }
+ @media (max-width:320px){
+     #Explore-text{
+         font-size: 12px;
+     }
+     #your-text{
+         font-size: 15px;
+     }
+     #discover-text{
+         font-size: 20px;
+         font-weight: 400;
+     }
+ }
+ @media (max-width:376px){
+     #Explore-text{
+         font-size: 12px;
+     }
+     #your-text{
+         font-size: 15px;
+     }
+     #discover-text{
+         font-size: 20px;
+         font-weight: 400;
+     }
+ }
+ @media (max-width:425px){
+     #Explore-text{
+         font-size: 12px;
+     }
+     #your-text{
+         font-size: 15px;
+     }
+     #discover-text{
+         font-size: 20px;
+         font-weight: 400;
+     }
+ }

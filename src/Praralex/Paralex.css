@@ -1,0 +1,79 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif; /* Optional: for better font rendering */
+}
+
+.parallax1, .parallax2, .parallax3 {
+    height: 500px; /* Adjust height as needed */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1 {
+    background-image: url('./img/jay.png'); /* Replace with your first image path */
+}
+
+.parallax2 {
+    background-image: url('./img/2.jpg'); /* Replace with your second image path */
+}
+
+.parallax3 {
+    background-image: url('./img/n.jpg'); /* Replace with your third image path */
+}
+
+.content-para {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+    margin: 0;
+}
+
+#am, #sm, #make {
+    margin: 0;
+    padding: 0;
+}
+
+#am{
+    font-size: 32px; /* Adjust size as needed */
+    color: orangered;
+    
+}
+
+#sm {
+    font-size: 32px; /* Adjust size as needed */
+    color: orangered;
+    
+}
+
+#make {
+    font-size: 18px; /* Adjust size as needed */
+    line-height: 1.5; /* Improve readability */
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 500;
+    color: black;
+
+}
+
+
+/* Optional: Adjust responsiveness */
+@media (max-width: 768px) {
+    .content-para {
+        padding: 20px;
+    }
+   
+    #am {
+        font-size: 15px; /* Adjust size for smaller screens */
+    }
+
+    #sm {
+        font-size: 1.2em; /* Adjust size for smaller screens */
+    }
+
+    #make {
+        font-size: 0.9em; /* Adjust size for smaller screens */
+    }
+}

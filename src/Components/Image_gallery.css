@@ -1,0 +1,99 @@
+.gta {
+    padding: 40px;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Default layout: 1 row, 7 columns */
+    gap: 15px;
+  }
+  
+  /* Style for image containers */
+  .image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Overlay for Instagram icon */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark transparent background */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Instagram icon */
+  .overlay i {
+    color: white;
+    font-size: 24px; /* Adjust the size of the icon */
+  }
+  
+  /* Show overlay on hover */
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* Responsive layout for screens up to 1024px */
+  @media (max-width: 1024px) {
+    .image-grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+  
+  /* Responsive layout for screens up to 768px */
+  @media (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .gta {
+        padding: 19px;
+      }
+  }
+  
+  /* Responsive layout for screens up to 480px */
+  @media (max-width: 480px) {
+    .image-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .image-container:nth-child(n+5) { /* Hide images starting from the 5th */
+        display: none;
+      }
+      .gta {
+        padding: 15px;
+      }
+  }
+  
+  /* Responsive layout for screens up to 320px */
+  @media (max-width: 320px) {
+    .image-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .gta {
+        padding: 15px;
+      }
+      .image-container:nth-child(n+5) { /* Hide images starting from the 5th */
+        display: none;
+      }
+  }
+  .idin {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+   
+  }
+  
+ 

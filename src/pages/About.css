@@ -1,0 +1,516 @@
+#aboutBg {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    background-image: url('https://wpocean.com/html/tf/loveme/assets/images/page-title.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating of the image */
+    margin-top: 88px;
+    font-family: "Baskervville SC", serif;
+  }
+  
+  #aboutBg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1; /* Make sure the overlay is above the background image */
+  }
+  
+  .hed {
+    text-align: center; /* Center text within the container */
+    z-index: 2; /* Make sure the text and buttons are above the overlay */
+    position: relative; /* Needed to position above the overlay */
+  }
+  
+  #ab {
+    font-size: 55px; /* Adjust size as needed */
+    color: #fff; /* Adjust color as needed for contrast */
+  }
+  
+  
+  .nav-button {
+   
+    color: #ffffff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+   text-decoration: none;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 19px;
+  }
+  .button-container{
+    margin-top: -15px;
+  }
+ 
+/* Default styles */
+
+
+  /*--------------second page------------------------------*/
+  /* Default styling: 1 row, 2 columns */
+
+  @media (max-width: 320px) {
+    #aboutBg {
+      height: 40vh; /* Adjust the height to ensure it fits well on smaller screens */
+      margin-top: 60px; /* Adjust margin if needed */
+    }
+  }
+  
+  /* Media Query for screens between 321px and 768px */
+  @media (min-width: 321px) and (max-width: 768px) {
+    #aboutBg {
+      height: 45vh; /* Adjust height for medium screens */
+      margin-top: 70px; /* Adjust margin if needed */
+    }
+  }
+  
+  /* Media Query for screens above 768px */
+  @media (min-width: 768px) {
+    #aboutBg {
+      height: 50vh; /* Default height for larger screens */
+      margin-top: 88px; /* Default margin */
+    }
+  }
+  
+/*------------------------------------second part-----of about----------------------------------*/
+/* Base styles */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start; /* Align items to the top */
+    margin-top: 85px;
+  }
+  
+  .left-column {
+    max-height: 500px; /* Adjust this value to control the height */
+  
+    display: flex; /* Flexbox to center content */
+    align-items: center;
+    justify-content: center;
+ 
+  }
+  
+  .left-column img {
+    max-height: 100%; /* Ensure the image fits within the column height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the entire image is visible */
+    border: 20px solid#86a0b6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+
+    
+    
+  }
+  
+  .right-column {
+    max-height: 500px; /* Adjust this value to control the height */
+    font-size: 1rem;
+  }
+
+  #planer{
+    font-family: "Baskervville SC", serif;
+    font-weight: 700;
+    color: #002642;
+  }
+#se{
+  font-family: "Baskervville SC", serif;
+}
+/* src/pages/ContactStyles.css */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.contact-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  flex: 1 1 200px; /* Responsive */
+  max-width: 300px; /* Max width for each card */
+}
+/* src/pages/ContactStyles.css */
+.address-header {
+  background-color:#f5f5f5; /* Background color red */
+  border-radius: 50%; /* Circular border radius */
+  padding: 10px; /* Padding around the SVG */
+  display: inline-block; /* Aligns the header properly */
+}
+.contact-container {
+  display: flex;
+  
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  width: 30%; /* Adjust width as needed */
+  margin: 10px; /* Add margin to give space between cards */
+  padding: 20px;
+  background-color: #f9f9f9; /* Optional: Add a background to make the card more distinct */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  text-align: center; /* Center the text */
+}
+
+.address-header {
+  margin-bottom: 10px;
+}
+
+#em{
+  font-size: 19px;
+  margin: 10px 0;
+  color: #002642;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .contact-card {
+    flex: 1 1 100%; /* Full width on small screens */
+  }
+}
+
+  #it{
+    color: #848892;
+    text-align: justify;
+    font-size: 17px;
+  }
+
+  .cr {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+  }
+  
+  .icon {
+    margin-right: 8px; /* Adjust space between icon and text */
+  }
+  
+  .text {
+    font-size: 16px; /* Adjust font size as needed */
+  }
+  
+  /* Responsive media queries */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  
+    .left-column,
+    .right-column {
+      max-height: none; /* Remove height constraints on small screens */
+    }
+  
+    .right-column {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .right-column {
+      font-size: 0.8rem;
+    }
+  }
+  
+
+  /*--------------------animated-------------------*/
+  .new-row{
+    margin-top: 108px;
+  }
+
+  .line-container {
+    display: flex; /* Flexbox to align items */
+    align-items: center; /* Vertically center the image */
+    justify-content: center; /* Center the whole content */
+  }
+  
+  .line {
+    border-bottom: 2px solid #848892; /* Line style */
+    margin: 0 10px; /* Spacing between line and image */
+    width: 120px; /* Set a fixed width for the lines */
+  }
+  
+  .center-image {
+    max-width: 100px; /* Adjust the image size as needed */
+    height: auto; /* Maintain image aspect ratio */
+  }
+  
+
+  /*----------------------pricing section----------------------*/
+
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+ 
+}
+
+.pricing-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+}
+
+.pricing-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: block;
+  border: 5px dotted #738ea5;
+  
+ 
+}
+
+.pricing-title {
+  font-size: 20px;
+  margin: 0 0 10px;
+  color: #002642;
+  font-family: "Futura PT";
+}
+
+.pricing-price {
+  font-size: 24px;
+  color: #0078c8;
+  margin: 0 0 20px;
+  font-weight: 500;
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.pricing-features li {
+  margin-bottom: 10px;
+  color: #7b7b7b;
+}
+
+.choose-package {
+  background-color: #0078c8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.choose-package:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Media Queries */
+/* For screens from 321px to 480px */
+@media (min-width: 321px) and (max-width: 480px) {
+  .pricing-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .pricing-card {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
+
+/* For screens from 481px to 768px */
+@media (min-width: 481px) and (max-width: 767px) {
+  .pricing-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .pricing-card {
+    width: 45%; /* Display 2 cards in a row */
+    margin: 20px;
+  }
+}
+
+/* For screens 768px and above */
+/* For screens 768px and above */
+@media (min-width: 768px) {
+  .pricing-container {
+    display: flex;  /* Use flexbox to arrange cards */
+    flex-direction: row;  /* Align items in a row */
+    justify-content: space-between;  /* Space between cards */
+    align-items: flex-start;  /* Align cards to the top */
+    padding: 20px;
+  }
+
+  .pricing-card {
+    width: 30%;  /* 30% width for each card to fit 3 in a row */
+    margin: 0;  /* Remove extra margins */
+  }
+  .pricing-title {
+    font-size: 15px;
+   
+  }
+  .pricing-price{
+    font-size: 12px;
+  }
+  .pricing-features li{
+    font-size: 14px;
+  }
+}
+
+/* For screens 1024px and above */
+@media (min-width: 1024px) {
+  .pricing-container {
+    padding: 40px;  /* More padding for larger screens */
+  }
+
+  .pricing-card {
+    width: 30%;  /* Maintain 3 cards in a row */
+    margin: 0;  /* Keep margins consistent */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add subtle shadow for better appearance */
+  }
+
+  .pricing-title {
+    font-size: 18px;  /* Increase font size for better readability */
+  }
+
+  .pricing-price {
+    font-size: 16px;  /* Increase price font size */
+  }
+
+  .pricing-features li {
+    font-size: 16px;  /* Slightly increase feature font size */
+  }
+
+  .pricing-button {
+    font-size: 16px;  /* Increase button font size */
+    padding: 12px 20px;  /* Adjust padding for better appearance */
+  }
+}
+/*---------------new------------------*/
+/* Base styles for the team container and cards */
+.our-team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.team-card {
+  width: 200px; /* Adjust the width as needed */
+  text-align: center;
+  border-radius: 8px;
+  padding: 20px;
+ 
+}
+.team-image {
+  display: inline-block;
+  position: relative;
+ 
+  
+}
+
+.team-image img {
+  transition: transform 0.3s ease; /* Smooth transition for the transform effect */
+  border: 1px solid #002642;
+  padding: 5px;
+}
+
+.team-image:hover img {
+  transform: scale(1.1); /* Scale the image to 110% on hover */
+}
+.team-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  height: 150px;
+}
+
+.team-image img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-name {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.team-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Responsive styles for screen width of 320px */
+@media (max-width: 320px) {
+  .our-team-container {
+    gap: 5px; /* Adjust the gap for smaller screens */
+  }
+
+  .team-card {
+    width: 45%; /* Adjust the width to fit 2 cards per row */
+  }
+  .team-name{
+    font-size: 12px;
+  }
+}
+/* Responsive styles for screen width between 321px and 767px */
+@media (min-width: 321px) and (max-width: 767px) {
+  .our-team-container {
+    gap: 10px; /* Adjust the gap for this screen size range */
+    padding: 10px;
+  }
+
+  .team-card {
+    width: 48%; /* Adjust the width for 2 cards per row */
+  }
+
+  .team-name {
+    font-size: 14px; /* Slightly larger font size for better readability */
+  }
+}
+
+
+  .team-icons {
+            display: flex;
+            gap: 5px; /* Spacing between icons */
+        }
+
+        .team-icons i {
+            font-size: 24px; /* Adjust the icon size */
+            padding: 10px; /* Space around the icon */
+            border-radius: 50%; /* Circular background */
+            transition: background-color 0.3s ease, border-radius 0.3s ease; /* Smooth transition */
+            color: #002642; /* Icon color */
+        }
+
+        .team-icons i:hover {
+            background-color:  #738ea5; /* Background color on hover */
+            border-radius: 50%; /* Ensure the border radius is 50% on hover */
+        }

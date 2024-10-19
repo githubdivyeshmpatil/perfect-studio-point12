@@ -1,0 +1,14 @@
+.carousel-item img {
+    width: 100%; /* Ensures the image takes full width of the container */
+    max-height:80vh; /* Adjust this value as needed to set the desired height */
+    object-fit: cover; /* Ensures the image covers the container area without stretching */
+    margin-top: 85px;
+    padding: 30px;
+  }
+  #log{
+    width: 160px;
+  }
+  #nav-loo{
+  
+    padding: 0;
+  }
